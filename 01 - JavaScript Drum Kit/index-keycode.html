@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Codes</title>
+    <link rel="stylesheet" href="keycode-style.css">
+</head>
+<body>
+    <div class='centered'>
+      <div><h1 class='keyCode'>Key Code</h1></div>
+      <div><kbd class='keyPressed'>Key Pressed</kbd></div>
+    </div>
+
+    <script>
+      window.addEventListener('keydown', (e) => {
+        const kc = document.querySelector('.keyCode');
+        kc.innerHTML = e.keyCode;
+        kc.style.fontSize = '150px';
+        const kp = document.querySelector('.keyPressed');
+        kp.innerHTML = e.key;
+        kp.style.fontSize = '40px';
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+html {
+    background: none;
+}
+
+.centered {
+    margin: auto; 
+    width: 60%; 
+    text-align: center;
+    margin-top: 25%;
+}
+
+.keyCode {
+    font-size: 60px;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.keyPressed {
+    font-size: 30px;
+    color: #656565;
+    font-weight: bold;
+}
