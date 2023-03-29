@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="drumkit-style.css">
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
 <body>
@@ -59,11 +59,6 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-  const removeTransition = (e) => {
-    if(e.propertyName !== 'transform') return; // skip it if it's not a transform
-    e.target.classList.remove('playing');
-  };
-  
   const playSound = (e) => {    
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -73,8 +68,16 @@
     audio.play();
     key.classList.add('playing');    
   };
-
+  
+  const removeTransition = (e) => {
+    // when pressing one of our specified keys, we will get all of the events that are happening (i.e. the things that are transitioning, such as the border color, the resizing, and the transform). Upon inspection, 'transform' is the event that's taking the longest to complete.
+    // console.log(e.propertyName);
+    if(e.propertyName !== 'transform') return; // skip it if it's not a transform
+    e.target.classList.remove('playing'); // remove the styles from the class
+  };
+  
   const keys = document.querySelectorAll('.key');
+  // We select all the keys (which is a collection of DOM nodes) and loop with a forEach to add an event listener to each node
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
 </script>
