@@ -1,22 +1,24 @@
-Based off of the JavaScript30 course, by Wes Bos.
+## 30+ JavaScript Exercises
 
-I've taken this repo and altered the projects and added some things of my own. I will commit serperately for each project, but the whole project will just stay on one branch for now.
+*Based off of the JavaScript30 course, by **Wes Bos**.*
 
-When I finish a project, I will add it here in the ReadMe file, so anything that isn't here yet hasn't been touched in the 'Exercises' folder.
+I've taken this repo and altered the projects and added some things of my own. I will commit serperately for each individual project, but the whole repo will just stay on one branch for now.
 
-I am currently at: Day 02 - Building a clock.
+When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-Projects will have 'START' and 'FINISHED' files. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course finished result looked like.
+### I am currently at: **Day 02** - Building a clock.
 
-** Disclaimer **: I don't pretend to be an expert programmer. But I'm using this opportunity to express what I'm working on so that I can get better at understanding the material itself. If anyone sees something that is incorrect, especially here in the ReadMe, that I may have misunderstood, I would be grateful for your input to learn from my mistake 🙏🙏 Cheers ☕
+Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
-Day 01 - Drum Kit:
+** Disclaimer **: I don't pretend to be an expert programmer. But I'm using this opportunity to express what I'm working on so that I can get better at understanding the material itself. If anyone sees something that is off, or it's clear that I missed the piont, I would be grateful for your input to learn from my mistake 🙏🙏 Cheers ☕
+
+#### Day 01 - Drum Kit:
 -Learned about the 'data-' property and how to use it.
 -In the past I used "switch" to associate the keys pressed to the audio file. In this project, we used forEach to loop through the keys and add an event listener to each of them, using template literals to identify the keys.
 -A solid practice of using the DOM and working with event properties.
 -I added a serparate index-keycode.html program, which simply renders the keyCode of whatever key is pressed, using innerHTML.
 
-Day 02 - Clock:
+#### Day 02 - Clock:
 -First, I worked on the logic to rotate a clock hand.
 -Learned how to change the origin of an element, so that we rotated it from the one end, instead of it's center axis.
 -Used the "transition-timing-function" property for the first time, which was really cool.
@@ -28,4 +30,4 @@ Day 02 - Clock:
 -I used a ternary operator within a termplate literal to apply a '0' as a placeholder if the value of the time was < 10.
 
 
-Thank you again to Wes Bos and all other contributors for the awesome lessons and projects I get to practice on. Don't hesitate to reach me and let me know if you have any suggestions.
+Thank you again to Wes Bos and all other contributors for the awesome lessons and projects I get to practice on. Don't hesitate to reach out to me and let me know if you have any suggestions.
