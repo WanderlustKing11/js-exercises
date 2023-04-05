@@ -36,6 +36,16 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - Now we can update our CSS variables on any element!
 -   Photo by [Daniel J. Schwarz](https://unsplash.com/es/@danieljschwarz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/9dnp5vwRUB8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 
+#### Day 04 - Array Cardio Day 1:
+- Working with the fundamentals of JavaScript and Array methods:
+  - filter
+  - map
+  - sort
+  - reduce
+- Added properties to show more data.
+- Got the DOM elements out of web page and filtered to get specific data.
+- Learned how to use a *spread* to take all the items out of an iterable (like a node list), and put them into a containing array.
+
 
 
 
