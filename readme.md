@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 03** - Playing with CSS Variables.
+### I am currently at: **Day 05** - Playing with Flex Panels.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -46,7 +46,11 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - Got the DOM elements out of web page and filtered to get specific data.
 - Learned how to use a *spread* to take all the items out of an iterable (like a node list), and put them into a containing array.
 
-
+#### Day 05 - Flex Panels Image Gallery:
+- Working with Flex. We take some content and create a grid of rows and columns and get some basic positioning.
+- Also did some familiar transitioning, and practiced toggling events by adding classes and eventListeners.
+- Changed 'click' to mouseover, and adjusted the transitionend.
+- Currently, if the mouse hovers in between panel borders, the transitions will glitch a little bit trying to decide which panel to enlarge. One idea that might work to fix this would be to use *setTimeout* to let the transition finish fully. The effect should be that every panel the mouse moves over will fully transition from class 'open' before 'mouseleave' takes effect when mouse leaves the target element.
 
 
 Thank you again to Wes Bos and all other contributors for the awesome lessons and projects I get to practice on. Don't hesitate to reach out to me and let me know if you have any suggestions.
