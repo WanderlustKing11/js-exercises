@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 06** - Making a search bar.
+### I am currently at: **Day 07** - Array Cardio Day 2.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -55,8 +55,16 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 #### Day 06 - Type Ahead:
 - We are using JS to drop down a list of related words from what a user puts into a search bar, or a form.
 - Used fetch to retrieve data.
-- Learned that when we pushed data into our array, initially it was nested; one big array into another array. The way we pushed data, or the different cities, to be individually placed in our cities array was by using the spread operator. Now it's no longer a nested array.
+- Learned to use the spread operator in a way to push the data, or the different cities, to be individually placed in our cities array so that it's no longer a nested array.
 - Used Regex and the DOM to render everything, including styling properties to highlight what was being searched.
+
+#### Day 07 - Array Cardio Day 2:
+- Working with the fundamentals of JavaScript and Array methods:
+- Using **.some()** to find if an array contains at *least* a certain amount of what we're looking for. Returns boolean.
+- Very similar with **.every()**, but this searches if all of the elements meet the condition, then returns boolean.
+- **.find()** is very much like filter, but instead of returning a subset of the array, it will return the first item that it finds.
+- Finally, **.findIndex()** finds *where* something is inside an array.
+- Also did some pretty sweet refactoring 😁
 
 
 
