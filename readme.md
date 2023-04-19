@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 07** - Array Cardio Day 2.
+### I am currently at: **Day 08** - Fun with HTML5 Canvas.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -65,6 +65,15 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - **.find()** is very much like filter, but instead of returning a subset of the array, it will return the first item that it finds.
 - Finally, **.findIndex()** finds *where* something is inside an array.
 - Also did some pretty sweet refactoring 😁
+
+#### Day 08 - Fun with HTML5 Canvas:
+- This is probably my favorite day of all! I love working with Canvas.
+- The end goal, here, is to use the click down on mouse and drag to draw lines that will differ in size, and will cycle through various colors, making all kinds of crazy looking lines of paint all over our canvas.
+- We started by setting up our base settings with Canvas screen, and then set the `strokeStyle` which is the color we'll be using, followed by `lineJoin` which tells us how the end of the line should be formed when it meets another line, and same with `lineCap` when we let go of the mouse click.
+- Used event listeners to track the coordinates of the mouse only when it's clicked down on the canvas.
+- Finally, we simply messed around with **hsl** and `lineWidth` for some fun results.
+- Learned about **globalCompositeOperation** and its various blend modes.
+- I added some weird setTimeout logic to play with saturation and light with the hsl. Also, **Warning**: my screen renders rates of change much differently than most typical screens, so this might appear ridiculous compared to the course's end results.
 
 
 
