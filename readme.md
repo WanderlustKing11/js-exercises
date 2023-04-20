@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 08** - Fun with HTML5 Canvas.
+### I am currently at: **Day 09** - Dev Tools Tricks.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -74,6 +74,21 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - Finally, we simply messed around with **hsl** and `lineWidth` for some fun results.
 - Learned about **globalCompositeOperation** and its various blend modes.
 - I added some weird setTimeout logic to play with saturation and light with the hsl. Also, **Warning**: my screen renders rates of change much differently than most typical screens, so this might appear ridiculous compared to the course's end results.
+
+#### Day 09 - 14 Must Know Dev Tools Tricks:
+- Learned things like how to debug to find unknown JS on a page using **Break on...** -> **attribute modifications**.
+- Used various console.*things*. Such as:
+  - console.log *'styled'* to add style to our log.
+  - console.warn/error/info - custom warnings/errors/infos in the console.
+  - console.assert - checks if things are true, great for testing.
+  - console.clear - clears the console.
+  - console.dir  - gives a dropdown in the console to investigate a DOM element and it's available methods, and such.
+  - console.group or console.groupCollapsed - groups logs together when logging something that comes from collections or arrays.
+  - console.counting - logs how many times something has been iterated, or used, in real time.
+  - console.time - helps time how long it takes something to run or fetch. This one was my personal favorite.
+  - Didn't add any type of special code here, just reviewed these helpful tools.
+
+
 
 
 
