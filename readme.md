@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 09** - Dev Tools Tricks.
+### I am currently at: **Day 10** - Check Mulitiple Checkboxes.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -87,6 +87,10 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
   - console.counting - logs how many times something has been iterated, or used, in real time.
   - console.time - helps time how long it takes something to run or fetch. This one was my personal favorite.
   - Didn't add any type of special code here, just reviewed these helpful tools.
+
+  #### Day 10 - Hold Shift to Check Multiple Checkboxes:
+  - The goal is to make all checkboxes checked between two selected checkboxes.
+  - Initial try was to use the DOM to tap into input[type="checkbox"], and then use addEventListener to listen to click. I ran a forEach loop and pushed the selected values into an array. But I was not getting quite the results that I wanted. This isn't complete yet. Will be back to finish this soon!
 
 
 
