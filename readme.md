@@ -90,8 +90,12 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 
   #### Day 10 - Hold Shift to Check Multiple Checkboxes:
   - The goal is to make all checkboxes checked between two selected checkboxes.
-  - Initial try was to use the DOM to tap into input[type="checkbox"], and then use addEventListener to listen to click. I ran a forEach loop and pushed the selected values into an array. But I was not getting quite the results that I wanted. This isn't complete yet. Will be back to finish this soon!
-
+  - Initial try was to use the DOM to tap into input[type="checkbox"], and then use `addEventListener` to listen to *click*. I ran a *forEach* loop and pushed the selected values into an array. But I was not getting quite the results that I wanted.
+  - Created a *function* to handle a *forEach* loop to see if every checkbox was checked or not. I used `this` to show which input we were checking.
+  - Used a simple *if statement* to see if the **shift** key was pressed while checking a box.
+  - Then nested an *if statement* to check if checkbox was checked (😵), and set it to true (essentially).
+  - Had to create a flag variable to store `lastChecked` so that we could go in both directions, and check all boxes in between from both top to bottom AND bottom to top.
+  - Finally, in order to get all boxes that are in between the two checked boxes to also be checked, I added one more *if statement* to set as checked.
 
 
 
