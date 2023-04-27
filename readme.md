@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 10** - Check Mulitiple Checkboxes.
+### I am currently at: **Day 11** - Custom HTML5 Video Player.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -88,14 +88,29 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
   - console.time - helps time how long it takes something to run or fetch. This one was my personal favorite.
   - Didn't add any type of special code here, just reviewed these helpful tools.
 
-  #### Day 10 - Hold Shift to Check Multiple Checkboxes:
-  - The goal is to make all checkboxes checked between two selected checkboxes.
-  - Initial try was to use the DOM to tap into input[type="checkbox"], and then use `addEventListener` to listen to *click*. I ran a *forEach* loop and pushed the selected values into an array. But I was not getting quite the results that I wanted.
-  - Created a *function* to handle a *forEach* loop to see if every checkbox was checked or not. I used `this` to show which input we were checking.
-  - Used a simple *if statement* to see if the **shift** key was pressed while checking a box.
-  - Then nested an *if statement* to check if checkbox was checked (😵), and set it to true (essentially).
-  - Had to create a flag variable to store `lastChecked` so that we could go in both directions, and check all boxes in between from both top to bottom AND bottom to top.
-  - Finally, in order to get all boxes that are in between the two checked boxes to also be checked, I added one more *if statement* to set as checked.
+#### Day 10 - Hold Shift to Check Multiple Checkboxes:
+- The goal is to make all checkboxes checked between two selected checkboxes.
+- Initial try was to use the DOM to tap into input[type="checkbox"], and then use `addEventListener` to listen to *click*. I ran a *forEach* loop and pushed the selected values into an array. But I was not getting quite the results that I wanted.
+- Created a *function* to handle a *forEach* loop to see if every checkbox was checked or not. I used `this` to show which input we were checking.
+- Used a simple *if statement* to see if the **shift** key was pressed while checking a box.
+- Then nested an *if statement* to check if checkbox was checked (😵), and set it to true (essentially).
+- Had to create a flag variable to store `lastChecked` so that we could go in both directions, and check all boxes in between from both top to bottom AND bottom to top.
+- Finally, in order to get all boxes that are in between the two checked boxes to also be checked, I added one more *if statement* to set as checked.
+
+#### Day 11 - Custom HTML5 Video Player:
+- This really my first time messing with, not just video content, but the video player. It comes with certain defaults, but that was completely adjusted with the course CSS, which is definitely interesting to look at.
+- Let's break this down. Step one, after finding all the elements in the DOM that we are going to use, the first thing we set up was a toggle function to make the video play or pause.
+  - One thing I learned was to use *string* names in a ternary operator, which let me access the variable name we stored it as. It might make it a little hard to read, but it defintely brings it to the next level of refactoring.
+- Updated the play and pause icons.
+- Using data attributes lets us use dataset which let's us access the value at whatever we want to set it. I though this part would be harder than it was. I simply had to loop *forEach* button with `data-skip` and listen for the click to run the function that handles the `data-skip`.
+  - Set the currentTime property to the video.
+  - dataset returns a string, so used parseFloat, and that was it.
+- Added 'mousedown' and 'mouseup' to track value of the sliders only when clicking down on the mouse and dragging, rather than simply single clicking it.
+  - As a consequence, I couldn't accurately change the value of the sliders by simply clicking, without dragging. I had to add additional check processes to see if the mouse was currently down in order to update the value of the slider using *input* instead of the *change* event, which fires the event continuously while the slider is being dragged or when it's just clicked.
+- Updating the progress bar was a simple matter of using `timeupdate` in an event listener to the video, and updating the style **flex-basis** with a percentage conversion to the time length of the video.
+- Finally, created another 2 event listeners to see where we clicked on the `progressBar`, and if we dragged it. Used offsetX to relate where we were in the video to the percent of the bar being filled.
+- Started to add fullscreen option to the video player. Almost complete!
+
 
 
 
