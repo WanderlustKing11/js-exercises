@@ -46,8 +46,24 @@ function scrub(e) {
   console.log(e);
 }
 
-function toggleFullScreen() {
-  player.fullscreen;
+function openFullscreen() {
+  if (fullScreen.requestFullScreen) {
+    player.requestFullScreen();
+  } else if (fullScreen.webkitRequestFullscreen) { // Safari
+    player.webkitRequestFullscreen();
+  } else if (fullScreen.msRequestFullscreen) {  // IE11
+    player.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (fullScreen.exitFullScreen) {
+    player.exitFullScreen();
+  } else if (fullScreen.webkitExitFullscreen) { // Safari
+    player.webkitExitFullscreen();
+  } else if (fullScreen.msExitFullscreen) {  // IE11
+    player.msExitFullscreen();
+  }
 }
 
 // Hook up the event listeners
@@ -81,4 +97,4 @@ progress.addEventListener('mousemove', (e) => isMouseDown && scrub(e));
 progress.addEventListener('mousedown', () => isMouseDown = true);
 progress.addEventListener('mouseup', () => isMouseDown = false);
 
-fullScreen.addEventListener('click', toggleFullScreen);
+fullScreen.addEventListener('click', openFullscreen);

@@ -109,7 +109,7 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
   - As a consequence, I couldn't accurately change the value of the sliders by simply clicking, without dragging. I had to add additional check processes to see if the mouse was currently down in order to update the value of the slider using *input* instead of the *change* event, which fires the event continuously while the slider is being dragged or when it's just clicked.
 - Updating the progress bar was a simple matter of using `timeupdate` in an event listener to the video, and updating the style **flex-basis** with a percentage conversion to the time length of the video.
 - Finally, created another 2 event listeners to see where we clicked on the `progressBar`, and if we dragged it. Used offsetX to relate where we were in the video to the percent of the bar being filled.
-- Started to add fullscreen option to the video player. Almost complete!
+- Successfully added fullscreen option to the video player. 🍿👍
 
 
 
