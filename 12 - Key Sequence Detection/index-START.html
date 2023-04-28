@@ -5,9 +5,32 @@
   <title>Key Detection</title>
   <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
   <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <img src="https://media.tenor.com/toHTSmtKLnkAAAAd/normie-flex.gif" alt="Anime girl Normie flex">
+    <div class="forU">
+      <h1>Konami Code?</h1>
+      <input type="text" readonly>
+    </div>
+    
+  </div>
 <script>
+  const gif = document.querySelector('img');
+  const pressed = [];
+  const secretCode = 'egghunter';
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight'];
+
+  window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+    pressed.push(e.key);
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    console.log(pressed);
+    if (pressed.join('') === secretCode || pressed.join('') === konamiCode.join('')) {
+      gif.setAttribute("src", "https://forum.worldofwarships.com/applications/core/interface/imageproxy/imageproxy.php?img=http://i.imgur.com/pShi4lH.gif&key=737f35acf02cf97e441c0496aa6d73e88faa2d75ec58e8aa7aaf22856c204af7");
+    } 
+  });
 </script>
 </body>
 </html>

@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 11** - Custom HTML5 Video Player.
+### I am currently at: **Day 12** - Key Sequence Detection (KONAMI CODE).
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -110,6 +110,14 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - Updating the progress bar was a simple matter of using `timeupdate` in an event listener to the video, and updating the style **flex-basis** with a percentage conversion to the time length of the video.
 - Finally, created another 2 event listeners to see where we clicked on the `progressBar`, and if we dragged it. Used offsetX to relate where we were in the video to the percent of the bar being filled.
 - Successfully added fullscreen option to the video player. 🍿👍
+
+#### Day 12 - Key Sequence Detection (KONAMI CODE):
+- Thanks to the NES, and much like the OG games Gradius and Contra, it's time to cheat.
+- Saved the **secret code** in a string variable.
+- Then, pushed all registered keys that were pressed down in the keyboard into an array, and *spliced* the registered keys length index from the secret code length.
+- Finally, *checked* if the array contained the *secret code* in a basic statement.
+- Just for fun, I added an easter egg of my own. Won't be hard to figure out by looking at my code 😅 I guess that's what ENV files are for.
+
 
 
 
