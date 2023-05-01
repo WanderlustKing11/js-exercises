@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 12** - Key Sequence Detection (KONAMI CODE).
+### I am currently at: **Day 13** - Slide In on Scroll.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -117,6 +117,14 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - Then, pushed all registered keys that were pressed down in the keyboard into an array, and *spliced* the registered keys length index from the secret code length.
 - Finally, *checked* if the array contained the *secret code* in a basic statement.
 - Just for fun, I added an easter egg of my own. Won't be hard to figure out by looking at my code 😅 I guess that's what ENV files are for.
+
+#### Day 13 - Slide In on Scroll:
+- Here, we're playing with *scrolling* and using CSS to play with the styles to transform how images act on our page, bringing them out of hiding by tapping into the DOM.
+- Learned about **debouncing** to enhance performance, and getting rid of unecessary processes and iterations.
+- It was interesting working with **offsetTop** property and the image height as a point of reference to the user position scrolling on the page, which would then trigger the `checkSlide` function to add the class (.active) that would transform the image's position and opacity.
+- I would say that this is easily achievable with frameworks, but clearly it's not so hard to do with vanilla JS either.
+- I did encounter one issue, so if anyone has any clue I would love to hear an explanation or some suggestions. When I console logged window.scrollY, it appeared to print the last iteration of where I scrolled to, not my current position. As a result, the image height is registered lower than it actually is. So, if we want the class `.active` to be added to the images when their position appears half way on our screen, well it's actually not activating until a little further down from halfway.
+  - From what I read, this has to do with browser rendering pipeline. The broswer has not had the time to update the `scrollY` value by the time the `console.log` statement is executed. One possible solution for this would be using `requestAnimationFrame` to delay the execution of the `checkSlide` funciton until the next animation frame, where hopefully the browser has finished rendering the updated position. But tbh, this didn't work for me. So, still a puzzle 🤷‍♂️
 
 
 
