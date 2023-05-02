@@ -17,6 +17,12 @@ function debounce(func, wait = 20, immediate = true) {
 const sliderImages = document.querySelectorAll('.slide-in');
 const bgColor = document.querySelector('html');
 const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+const minHue = 47;
+const maxHue = 200;
+const minSat = 100;
+const maxSat = 42;
+const minLight = 50;
+const maxLight = 39;
 
 function checkSlide(e) {
 //   console.log(window.scrollY);
@@ -38,10 +44,11 @@ function checkSlide(e) {
 function backgroundShift() {
   let scroll = window.scrollY;
   console.log(scroll);
-//   let saturation = 100 - (scroll / maxScroll) * 100;
-  let light = (100 - (scroll / maxScroll) * 100) / 2;
-  bgColor.style.backgroundColor = `hsl(47, 100%, ${light}%)`;
+  let hue = minHue + (maxHue - minHue) * (scroll / maxScroll);
+  let sat = minSat + (maxSat - minSat) * (scroll / maxScroll);
+  let light = minLight + (maxLight - minLight) * (scroll / maxScroll);
+  bgColor.style.backgroundColor = `hsl(${hue}, ${sat}%, ${light}%)`;
 }
 
 window.addEventListener('scroll', debounce(checkSlide));
-window.addEventListener('scroll', debounce(backgroundShift));
+window.addEventListener('scroll', backgroundShift);
