@@ -6,7 +6,7 @@ I've taken this repo and altered the projects and added some things of my own. I
 
 When I finish a project, I will add it here (below) in the ReadMe file, so anything that is **not** here yet hasn't been touched in the 'Exercises' folder by me, and is just part of the original course.
 
-### I am currently at: **Day 13** - Slide In on Scroll.
+### I am currently at: **Day 14** - References vs Copying.
 
 Each project will have a "START" and "FINISHED" file. I will only be working on the 'START' files, and will also add additional files. The 'FINISHED' files will be a comparison of what the course end result looked like.
 
@@ -126,6 +126,12 @@ Each project will have a "START" and "FINISHED" file. I will only be working on 
 - I did encounter one issue, so if anyone has any clue I would love to hear an explanation or some suggestions. When I console logged window.scrollY, it appeared to print the last iteration of where I scrolled to, not my current position. As a result, the image height is registered lower than it actually is. So, if we want the class `.active` to be added to the images when their position appears half way on our screen, well it's actually not activating until a little further down from halfway.
   - From what I read, this has to do with browser rendering pipeline. The broswer has not had the time to update the `scrollY` value by the time the `console.log` statement is executed. One possible solution for this would be using `requestAnimationFrame` to delay the execution of the `checkSlide` funciton until the next animation frame, where hopefully the browser has finished rendering the updated position. But tbh, this didn't work for me. So, still a puzzle 🤷‍♂️
 
+#### Day 14 - References vs Copying:
+- This lesson demonstrates the difference in **referencing** and **copying** *arrays* and *objects*.
+  - When we reference one of those, we change the values, or data, of the original array/object.
+  - Using the methods in this lesson, we learned how to copy the array and objects in a way that leave the original values, and we created brand new objects and arrays.
+- I learned how to use the **spread operator** a little bit better, and it was my prefered way of copying and creating a new array/object.
+- Today is May 4th at the time of this writing, so there's an obvious theme that I went with in this lesson 🙏
 
 
 
